@@ -1,6 +1,6 @@
 ## Estagio de compilação
 ## imagem do Linux para compilar o projeto
-FROM Ubuntu:latest AS build
+FROM ubuntu:latest AS build
 
 ## instalar o Java
 RUN apt-get update
@@ -17,7 +17,7 @@ COPY . .
 RUN mvn clean install
 
 ## Execução do projeto
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-jammy
 
 ## Expor a porta 8080
 EXPOSE 8080
