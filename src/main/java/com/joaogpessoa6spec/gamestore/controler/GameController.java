@@ -3,16 +3,13 @@ package com.joaogpessoa6spec.gamestore.controler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import ch.qos.logback.core.model.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.joaogpessoa6spec.gamestore.model.Game;
 import com.joaogpessoa6spec.gamestore.repository.GameRepository;
 
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 
 
